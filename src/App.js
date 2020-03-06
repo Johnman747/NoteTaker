@@ -90,13 +90,13 @@ class App extends Component {
       <IonPage>
         <IonHeader>
           <IonToolbar>
-            <IonTitle >Todo</IonTitle>
+            <IonTitle >Note Taker</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent>
           <IonHeader collapse="condense">
             <IonToolbar>
-              <IonTitle size="large">Note Taker React+Ionic</IonTitle>
+              <IonTitle size="large">Note Taker</IonTitle>
             </IonToolbar>
             <IonList inset="true" lines="full">
               {
