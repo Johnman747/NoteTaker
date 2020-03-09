@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList,} from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, } from '@ionic/react';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -81,7 +81,7 @@ class App extends Component {
   }
 
   editNote = (noteId, noteContent) => {
-    this.database.child(noteId).update({noteContent: noteContent});
+    this.database.child(noteId).update({ noteContent: noteContent });
   }
 
 
@@ -96,7 +96,8 @@ class App extends Component {
         <IonContent>
           <IonHeader collapse="condense">
             <IonToolbar>
-              <IonTitle size="large">Note Taker</IonTitle>
+              <IonTitle size="large">Note Taker
+</IonTitle>
             </IonToolbar>
             <IonList inset="true" lines="full">
               {
@@ -107,7 +108,7 @@ class App extends Component {
                       key={note.id}
                       removeNote={this.removeNote}
                       editNote={this.editNote}
-                      />
+                    />
                   )
                 })
               }
